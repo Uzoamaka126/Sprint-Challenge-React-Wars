@@ -10,17 +10,20 @@ const stData = 'https://swapi.co/api/people/';
 const WholeApp = styled.div`
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
 `
 const Header = styled.div`
-  background: #fff;
-  width: 60%;
-  border-radius: 6px;
+  background: #090909;
+  max-width: 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 14px 16px;
 
   h2 {
-    color: peru;
+    color: #fff;
+    font-size: 25px;
   }
 
 `
@@ -56,7 +59,7 @@ const App = () => {
     return (
       <WholeApp>
         <Header>
-          <h2>React Wars!!!</h2>
+          <h2>React Wars: Pick a Character</h2>
         </Header>
         <Characters character={starwarsData.results} />
       </WholeApp>

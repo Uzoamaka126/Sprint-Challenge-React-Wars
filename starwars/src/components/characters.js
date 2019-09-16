@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import SingleCharacter from './character'
 
 const CharactersListContainer = styled.ul`
-  width: 100%;
-  padding: 10px 20px;
+  max-width: 100%;
+  padding: 20px 25px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 300px;
+  height: 100%;
 `
 
 const Characters = props => {

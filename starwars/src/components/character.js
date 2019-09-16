@@ -8,16 +8,27 @@ const SingleCharacter = styled.li`
     flex: 0 0 25%;
     background: #fff;
     border-radius: 6px;
-    margin-right: 10px;
+    margin: 20px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    list-style-type: none;
 
+    p {
+        font-size: 18px;
 
+        &:first-child {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
 `
 
 const SingleCharacterInfo = (props) => {
     const { name, gender, birthyear, skinColor, eyeColor, mass } = props;
     return (
         <SingleCharacter>
-            <p>Name: {name}</p>
+            <p>{name}</p>
             <p>Gender: {gender}</p>
             <p>Birth Year: {birthyear}</p>
             <p>Skin Color: {skinColor}</p>
